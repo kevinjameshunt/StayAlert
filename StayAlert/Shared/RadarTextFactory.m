@@ -53,7 +53,7 @@ static RadarTextFactory *_shared;
             // Get the array of text items
             NSArray *objectArray = [adsDict objectForKey:@"radarText"];
             
-            int i = arc4random() % 11;
+            int i = arc4random() % [objectArray count];
             return [objectArray objectAtIndex:i];
         }
     }
