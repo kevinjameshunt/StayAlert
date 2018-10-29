@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <imageView width="1" height="1" alignment="center" verticalAlignment="bottom" image="radar0" animationDuration="0.5" id="zqy-5a-7GR">
+                            <gestureRecognizers>
+                                <tapGestureRecognizer id="5MQ-87-IFR">
+                                    <connections>
+                                        <action selector="radarBtnPressed:" destination="AgC-eL-Hgc" id="Fff-UH-ZZk"/>
+                                    </connections>
+                                </tapGestureRecognizer>
+                            </gestureRecognizers>
+                        </imageView>
+                    </items>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.40000000000000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="radarImg" destination="zqy-5a-7GR" id="neW-8S-N9d"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="79" y="32"/>
+        </scene>
+        <!--Radar-->
+        <scene sceneID="cse-1e-tZk">
+            <objects>
+                <controller identifier="RadarTextInterfaceController" title="Radar" id="vVa-eq-lO1" customClass="RadarTextInterfaceController">
+                    <items>
+                        <label width="1" widthAdjustment="-10" height="1" alignment="center" text="Label" textAlignment="left" numberOfLines="0" id="AfT-0O-tgj">
+                            <color key="textColor" red="0.11122703339999999" green="0.27259718820000001" blue="0.56262187330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                    </items>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.40000000000000002" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="radarText" destination="AfT-0O-tgj" id="K31-Is-mhf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="307" y="32"/>
+        </scene>
+    </scenes>
+</document>

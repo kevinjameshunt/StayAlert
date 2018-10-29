@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radar0" translatesAutoresizingMaskIntoConstraints="NO" id="ddI-WV-cOJ">
+                                <rect key="frame" x="62.5" y="267" width="250" height="250"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="RO5-fN-w2e"/>
+                                    <constraint firstAttribute="height" constant="250" id="wBQ-Au-nBb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-xk-wIZ">
+                                <rect key="frame" x="27.5" y="40" width="320" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="ejC-uz-yVn"/>
+                                    <constraint firstAttribute="height" constant="225" id="fY2-qZ-KIr"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TtD-Zd-qaa">
+                                <rect key="frame" x="-0.5" y="517" width="375" height="150"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="skv-WU-2AB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.11122703343944476" green="0.27259718816755607" blue="0.56262187334486669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.66274509803921566" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="skv-WU-2AB" firstAttribute="height" secondItem="TtD-Zd-qaa" secondAttribute="height" id="Sfv-lP-UGp"/>
+                                    <constraint firstItem="skv-WU-2AB" firstAttribute="width" secondItem="TtD-Zd-qaa" secondAttribute="width" id="TAU-6e-2bI"/>
+                                    <constraint firstItem="skv-WU-2AB" firstAttribute="centerX" secondItem="TtD-Zd-qaa" secondAttribute="centerX" id="W7A-h9-g03"/>
+                                    <constraint firstItem="skv-WU-2AB" firstAttribute="centerY" secondItem="TtD-Zd-qaa" secondAttribute="centerY" id="bIz-Ux-JYl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWV-8v-vyr">
+                                <rect key="frame" x="0.0" y="10" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.40000000000000002" blue="0.60392156860000001" alpha="0.1502836045" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="iNQ-cC-rge" appends="YES" id="Q3D-Aj-C58"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ddI-WV-cOJ" secondAttribute="bottom" constant="150" id="6uI-jx-dvx"/>
+                            <constraint firstItem="6eT-xk-wIZ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FgN-w7-eXM"/>
+                            <constraint firstItem="WWV-8v-vyr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="G14-Ks-ith"/>
+                            <constraint firstItem="WWV-8v-vyr" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="H9G-B4-gH8"/>
+                            <constraint firstItem="TtD-Zd-qaa" firstAttribute="top" secondItem="ddI-WV-cOJ" secondAttribute="bottom" id="Hrm-qY-V6e"/>
+                            <constraint firstItem="6eT-xk-wIZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="IvZ-Sp-Cnh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TtD-Zd-qaa" secondAttribute="bottom" id="bAT-OY-cXi"/>
+                            <constraint firstItem="ddI-WV-cOJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c9H-Gd-7vK"/>
+                            <constraint firstItem="TtD-Zd-qaa" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="dol-Kn-4hc"/>
+                            <constraint firstItem="WWV-8v-vyr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="pY3-zN-dBY"/>
+                            <constraint firstItem="WWV-8v-vyr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="u0o-ZR-quc"/>
+                            <constraint firstItem="TtD-Zd-qaa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zSe-U4-zPu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="radarImg" destination="ddI-WV-cOJ" id="mxS-QA-w2P"/>
+                        <outlet property="textView" destination="skv-WU-2AB" id="KpL-Er-fFR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="iNQ-cC-rge">
+                    <connections>
+                        <action selector="radarBtnTapped:" destination="BYZ-38-t0r" id="hn9-Eg-w7Z"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="320" height="225"/>
+        <image name="radar0" width="125" height="125"/>
+    </resources>
+</document>

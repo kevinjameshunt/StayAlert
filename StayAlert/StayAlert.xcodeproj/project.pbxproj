@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5989FC1C2184BEBB00249763 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC1B2184BEBB00249763 /* AppDelegate.m */; };
+		5989FC1F2184BEBC00249763 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC1E2184BEBC00249763 /* ViewController.m */; };
+		5989FC222184BEBC00249763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC202184BEBC00249763 /* Main.storyboard */; };
+		5989FC242184BEBE00249763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC232184BEBE00249763 /* Assets.xcassets */; };
+		5989FC272184BEBE00249763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC252184BEBE00249763 /* LaunchScreen.storyboard */; };
+		5989FC2A2184BEBE00249763 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC292184BEBE00249763 /* main.m */; };
+		5989FC362184CB4600249763 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC342184CB4600249763 /* Interface.storyboard */; };
+		5989FC382184CB4700249763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC372184CB4700249763 /* Assets.xcassets */; };
+		5989FC3F2184CB4800249763 /* StayAlertWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5989FC3E2184CB4700249763 /* StayAlertWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5989FC452184CB4800249763 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC442184CB4800249763 /* InterfaceController.m */; };
+		5989FC482184CB4800249763 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC472184CB4800249763 /* ExtensionDelegate.m */; };
+		5989FC4A2184CB4900249763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC492184CB4900249763 /* Assets.xcassets */; };
+		5989FC4E2184CB4900249763 /* StayAlertWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5989FC322184CB4500249763 /* StayAlertWatch.app */; };
+		59AAEE262184FC6800F8E324 /* radarText.json in Resources */ = {isa = PBXBuildFile; fileRef = 59AAEE252184FC6800F8E324 /* radarText.json */; };
+		59AAEE272184FC6800F8E324 /* radarText.json in Resources */ = {isa = PBXBuildFile; fileRef = 59AAEE252184FC6800F8E324 /* radarText.json */; };
+		59AAEE2A2185192200F8E324 /* RadarTextInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59AAEE292185192200F8E324 /* RadarTextInterfaceController.m */; };
+		59F99B4D21876961006CA149 /* RadarTextFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F99B4C21876961006CA149 /* RadarTextFactory.m */; };
+		59F99B4E21876961006CA149 /* RadarTextFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F99B4C21876961006CA149 /* RadarTextFactory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5989FC402184CB4800249763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5989FC0F2184BEB800249763 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5989FC3D2184CB4700249763;
+			remoteInfo = "StayAlertWatch Extension";
+		};
+		5989FC4C2184CB4900249763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5989FC0F2184BEB800249763 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5989FC312184CB4500249763;
+			remoteInfo = StayAlertWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5989FC522184CB4900249763 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5989FC3F2184CB4800249763 /* StayAlertWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5989FC562184CB4900249763 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				5989FC4E2184CB4900249763 /* StayAlertWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5989FC172184BEBA00249763 /* StayAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5989FC1A2184BEBA00249763 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5989FC1B2184BEBB00249763 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5989FC1D2184BEBB00249763 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5989FC1E2184BEBC00249763 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5989FC212184BEBC00249763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5989FC232184BEBE00249763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5989FC262184BEBE00249763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5989FC282184BEBE00249763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5989FC292184BEBE00249763 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5989FC322184CB4500249763 /* StayAlertWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayAlertWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5989FC352184CB4600249763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5989FC372184CB4700249763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5989FC392184CB4700249763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5989FC3E2184CB4700249763 /* StayAlertWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StayAlertWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5989FC432184CB4800249763 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		5989FC442184CB4800249763 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		5989FC462184CB4800249763 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		5989FC472184CB4800249763 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		5989FC492184CB4900249763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5989FC4B2184CB4900249763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59AAEE252184FC6800F8E324 /* radarText.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = radarText.json; sourceTree = SOURCE_ROOT; };
+		59AAEE282185192200F8E324 /* RadarTextInterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadarTextInterfaceController.h; sourceTree = "<group>"; };
+		59AAEE292185192200F8E324 /* RadarTextInterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadarTextInterfaceController.m; sourceTree = "<group>"; };
+		59F99B4B21876961006CA149 /* RadarTextFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadarTextFactory.h; sourceTree = "<group>"; };
+		59F99B4C21876961006CA149 /* RadarTextFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadarTextFactory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5989FC142184BEBA00249763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5989FC3B2184CB4700249763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5989FC0E2184BEB800249763 = {
+			isa = PBXGroup;
+			children = (
+				59F99B4A2187693C006CA149 /* Shared */,
+				5989FC192184BEBA00249763 /* StayAlert */,
+				5989FC332184CB4500249763 /* StayAlertWatch */,
+				5989FC422184CB4800249763 /* StayAlertWatch Extension */,
+				5989FC182184BEBA00249763 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5989FC182184BEBA00249763 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5989FC172184BEBA00249763 /* StayAlert.app */,
+				5989FC322184CB4500249763 /* StayAlertWatch.app */,
+				5989FC3E2184CB4700249763 /* StayAlertWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5989FC192184BEBA00249763 /* StayAlert */ = {
+			isa = PBXGroup;
+			children = (
+				5989FC1A2184BEBA00249763 /* AppDelegate.h */,
+				5989FC1B2184BEBB00249763 /* AppDelegate.m */,
+				5989FC1D2184BEBB00249763 /* ViewController.h */,
+				5989FC1E2184BEBC00249763 /* ViewController.m */,
+				5989FC202184BEBC00249763 /* Main.storyboard */,
+				5989FC232184BEBE00249763 /* Assets.xcassets */,
+				5989FC252184BEBE00249763 /* LaunchScreen.storyboard */,
+				5989FC282184BEBE00249763 /* Info.plist */,
+				5989FC292184BEBE00249763 /* main.m */,
+				59AAEE252184FC6800F8E324 /* radarText.json */,
+			);
+			path = StayAlert;
+			sourceTree = "<group>";
+		};
+		5989FC332184CB4500249763 /* StayAlertWatch */ = {
+			isa = PBXGroup;
+			children = (
+				5989FC342184CB4600249763 /* Interface.storyboard */,
+				5989FC372184CB4700249763 /* Assets.xcassets */,
+				5989FC392184CB4700249763 /* Info.plist */,
+			);
+			path = StayAlertWatch;
+			sourceTree = "<group>";
+		};
+		5989FC422184CB4800249763 /* StayAlertWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				59AAEE282185192200F8E324 /* RadarTextInterfaceController.h */,
+				59AAEE292185192200F8E324 /* RadarTextInterfaceController.m */,
+				5989FC432184CB4800249763 /* InterfaceController.h */,
+				5989FC442184CB4800249763 /* InterfaceController.m */,
+				5989FC462184CB4800249763 /* ExtensionDelegate.h */,
+				5989FC472184CB4800249763 /* ExtensionDelegate.m */,
+				5989FC492184CB4900249763 /* Assets.xcassets */,
+				5989FC4B2184CB4900249763 /* Info.plist */,
+			);
+			path = "StayAlertWatch Extension";
+			sourceTree = "<group>";
+		};
+		59F99B4A2187693C006CA149 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				59F99B4B21876961006CA149 /* RadarTextFactory.h */,
+				59F99B4C21876961006CA149 /* RadarTextFactory.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5989FC162184BEBA00249763 /* StayAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5989FC2D2184BEBE00249763 /* Build configuration list for PBXNativeTarget "StayAlert" */;
+			buildPhases = (
+				5989FC132184BEBA00249763 /* Sources */,
+				5989FC142184BEBA00249763 /* Frameworks */,
+				5989FC152184BEBA00249763 /* Resources */,
+				5989FC562184CB4900249763 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5989FC4D2184CB4900249763 /* PBXTargetDependency */,
+			);
+			name = StayAlert;
+			productName = StayAlert;
+			productReference = 5989FC172184BEBA00249763 /* StayAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5989FC312184CB4500249763 /* StayAlertWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5989FC532184CB4900249763 /* Build configuration list for PBXNativeTarget "StayAlertWatch" */;
+			buildPhases = (
+				5989FC302184CB4500249763 /* Resources */,
+				5989FC522184CB4900249763 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5989FC412184CB4800249763 /* PBXTargetDependency */,
+			);
+			name = StayAlertWatch;
+			productName = StayAlertWatch;
+			productReference = 5989FC322184CB4500249763 /* StayAlertWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		5989FC3D2184CB4700249763 /* StayAlertWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5989FC4F2184CB4900249763 /* Build configuration list for PBXNativeTarget "StayAlertWatch Extension" */;
+			buildPhases = (
+				5989FC3A2184CB4700249763 /* Sources */,
+				5989FC3B2184CB4700249763 /* Frameworks */,
+				5989FC3C2184CB4700249763 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StayAlertWatch Extension";
+			productName = "StayAlertWatch Extension";
+			productReference = 5989FC3E2184CB4700249763 /* StayAlertWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5989FC0F2184BEB800249763 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Prophet Studios";
+				TargetAttributes = {
+					5989FC162184BEBA00249763 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5989FC312184CB4500249763 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					5989FC3D2184CB4700249763 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 5989FC122184BEB800249763 /* Build configuration list for PBXProject "StayAlert" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5989FC0E2184BEB800249763;
+			productRefGroup = 5989FC182184BEBA00249763 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5989FC162184BEBA00249763 /* StayAlert */,
+				5989FC312184CB4500249763 /* StayAlertWatch */,
+				5989FC3D2184CB4700249763 /* StayAlertWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5989FC152184BEBA00249763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5989FC272184BEBE00249763 /* LaunchScreen.storyboard in Resources */,
+				59AAEE262184FC6800F8E324 /* radarText.json in Resources */,
+				5989FC242184BEBE00249763 /* Assets.xcassets in Resources */,
+				5989FC222184BEBC00249763 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5989FC302184CB4500249763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5989FC382184CB4700249763 /* Assets.xcassets in Resources */,
+				5989FC362184CB4600249763 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5989FC3C2184CB4700249763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5989FC4A2184CB4900249763 /* Assets.xcassets in Resources */,
+				59AAEE272184FC6800F8E324 /* radarText.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5989FC132184BEBA00249763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F99B4D21876961006CA149 /* RadarTextFactory.m in Sources */,
+				5989FC1F2184BEBC00249763 /* ViewController.m in Sources */,
+				5989FC2A2184BEBE00249763 /* main.m in Sources */,
+				5989FC1C2184BEBB00249763 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5989FC3A2184CB4700249763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F99B4E21876961006CA149 /* RadarTextFactory.m in Sources */,
+				59AAEE2A2185192200F8E324 /* RadarTextInterfaceController.m in Sources */,
+				5989FC482184CB4800249763 /* ExtensionDelegate.m in Sources */,
+				5989FC452184CB4800249763 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5989FC412184CB4800249763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5989FC3D2184CB4700249763 /* StayAlertWatch Extension */;
+			targetProxy = 5989FC402184CB4800249763 /* PBXContainerItemProxy */;
+		};
+		5989FC4D2184CB4900249763 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5989FC312184CB4500249763 /* StayAlertWatch */;
+			targetProxy = 5989FC4C2184CB4900249763 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5989FC202184BEBC00249763 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5989FC212184BEBC00249763 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5989FC252184BEBE00249763 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5989FC262184BEBE00249763 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5989FC342184CB4600249763 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5989FC352184CB4600249763 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5989FC2B2184BEBE00249763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5989FC2C2184BEBE00249763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5989FC2E2184BEBE00249763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8SSGR3H48;
+				INFOPLIST_FILE = StayAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prophetstudios.StayAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5989FC2F2184BEBE00249763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8SSGR3H48;
+				INFOPLIST_FILE = StayAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prophetstudios.StayAlert;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5989FC502184CB4900249763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8SSGR3H48;
+				INFOPLIST_FILE = "StayAlertWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prophetstudios.StayAlert.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		5989FC512184CB4900249763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8SSGR3H48;
+				INFOPLIST_FILE = "StayAlertWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.prophetstudios.StayAlert.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		5989FC542184CB4900249763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8SSGR3H48;
+				IBSC_MODULE = StayAlertWatch_Extension;
+				INFOPLIST_FILE = StayAlertWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prophetstudios.StayAlert.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		5989FC552184CB4900249763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V8SSGR3H48;
+				IBSC_MODULE = StayAlertWatch_Extension;
+				INFOPLIST_FILE = StayAlertWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.prophetstudios.StayAlert.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5989FC122184BEB800249763 /* Build configuration list for PBXProject "StayAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5989FC2B2184BEBE00249763 /* Debug */,
+				5989FC2C2184BEBE00249763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5989FC2D2184BEBE00249763 /* Build configuration list for PBXNativeTarget "StayAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5989FC2E2184BEBE00249763 /* Debug */,
+				5989FC2F2184BEBE00249763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5989FC4F2184CB4900249763 /* Build configuration list for PBXNativeTarget "StayAlertWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5989FC502184CB4900249763 /* Debug */,
+				5989FC512184CB4900249763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5989FC532184CB4900249763 /* Build configuration list for PBXNativeTarget "StayAlertWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5989FC542184CB4900249763 /* Debug */,
+				5989FC552184CB4900249763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5989FC0F2184BEB800249763 /* Project object */;
+}
