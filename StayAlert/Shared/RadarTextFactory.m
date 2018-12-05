@@ -37,7 +37,7 @@ static RadarTextFactory *_shared;
 }
 
 - (NSString *)getRadarText {
-    // Open file containing list of IAP IDs
+    // Open file containing list of items
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSError *error;
     BOOL success;
@@ -53,6 +53,7 @@ static RadarTextFactory *_shared;
             // Get the array of text items
             NSArray *objectArray = [adsDict objectForKey:@"radarText"];
             
+            // Return a random item
             int i = arc4random() % [objectArray count];
             return [objectArray objectAtIndex:i];
         }

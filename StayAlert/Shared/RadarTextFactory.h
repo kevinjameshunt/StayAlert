@@ -20,7 +20,7 @@
 
 /*
  * Retrieve a randomly generated radar safety tip from local storage
- * @return An NSStrin representing the radar safety tip text
+ * @return An NSString representing the radar safety tip text
  */
 - (NSString *)getRadarText;
 
